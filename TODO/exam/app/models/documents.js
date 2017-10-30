@@ -9,7 +9,6 @@ var documentSchema = new Schema({
     email: {type: String, required: true, unique: true},
     password: { type: String, required: true },
     dateRegistered: {type: Date, default: Date.now },
-    age: {type: Number, required: true },
  
    
       

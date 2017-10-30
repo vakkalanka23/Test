@@ -43,13 +43,13 @@ db.on('error', function () {
     app.use(function (req, res) {
       res.type('text/plan');
       res.status(404);
-      res.send('404 Not Found');
+      res.send('404 Not Found'); // this is to send a 404 error message if no route is found//
     });
  
     app.use(function (err, req, res, next) {
       res.type('text/plan');
       res.status(500);
-      res.send('500 Server Error'); 
+      res.send('500 Server Error'); // This function is called when the error is encountered by other middleware//
     });
  
     console.log("Starting application");
