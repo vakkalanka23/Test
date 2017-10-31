@@ -10,8 +10,8 @@ var documentSchema = new Schema({
     password: { type: String, required: true },
     dateRegistered: {type: Date, default: Date.now },
  
-   
-      
+    char: { type: String, required: true },
+    number: { type: Number, min: 16, max: 60},
     
 });
  
